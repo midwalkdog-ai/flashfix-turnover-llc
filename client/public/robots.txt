@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block admin/dashboard from indexing
+Disallow: /dashboard
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://flashfixturnover.com/sitemap.xml

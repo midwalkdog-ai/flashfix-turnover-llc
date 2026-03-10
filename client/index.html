@@ -1,19 +1,103 @@
 <!doctype html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>FlashFix Property Services LLC - Turnover Management System</title>    
-    <!-- THIS IS THE START OF A COMMENT BLOCK, BLOCK TO BE DELETED: Google Fonts here, example:
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>FlashFix Turnover LLC | Property Turnover Services in Springfield, MO</title>
+    <meta name="description" content="FlashFix Turnover LLC provides fast, professional property turnover services in Springfield, MO — painting, drywall, cleaning, lock changes, trash outs, and emergency maintenance." />
+    <meta name="keywords" content="property turnover Springfield MO, painting Springfield MO, drywall repair Springfield MO, property maintenance Missouri, FlashFix Turnover" />
+    <meta name="author" content="FlashFix Turnover LLC" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://flashfixturnover.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://flashfixturnover.com/" />
+    <meta property="og:title" content="FlashFix Turnover LLC | Property Turnover Services in Springfield, MO" />
+    <meta property="og:description" content="Fast, professional property turnover services in Springfield, MO. Painting, drywall, cleaning, lock changes, trash outs, and emergency maintenance." />
+    <meta property="og:site_name" content="FlashFix Turnover LLC" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FlashFix Turnover LLC | Property Turnover Services in Springfield, MO" />
+    <meta name="twitter:description" content="Fast, professional property turnover services in Springfield, MO." />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    THIS IS THE END OF A COMMENT BLOCK, BLOCK TO BE DELETED -->
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet" />
 
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://flashfixturnover.com/#business",
+      "name": "FlashFix Turnover LLC",
+      "legalName": "FlashFix Turnover LLC",
+      "description": "Springfield MO's fastest property turnover service. Painting, drywall repair, deep cleaning, lock changes, trash outs, and 24/7 emergency maintenance for rental properties.",
+      "url": "https://flashfixturnover.com",
+      "logo": "https://flashfixturnover.com/favicon.svg",
+      "telephone": "+1-417-555-0100",
+      "email": "info@flashfixturnover.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Springfield",
+        "addressLocality": "Springfield",
+        "addressRegion": "MO",
+        "postalCode": "65801",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2090,
+        "longitude": -93.2923
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Springfield", "sameAs": "https://en.wikipedia.org/wiki/Springfield,_Missouri"},
+        {"@type": "AdministrativeArea", "name": "Greene County, Missouri"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "18:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "16:00"}
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Property Turnover Services",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Interior & Exterior Painting"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Drywall Repair & Installation"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Move-Out Deep Cleaning"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Lock Changes & Rekeying"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Trash Outs & Property Cleanouts"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "24/7 Emergency Maintenance"}}
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "87",
+        "bestRating": "5"
+      },
+      "priceRange": "$$",
+      "currenciesAccepted": "USD",
+      "paymentAccepted": "Cash, Credit Card, Check, ACH"
+    }
+    </script>
+
+    <!-- WebSite Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "FlashFix Turnover LLC",
+      "url": "https://flashfixturnover.com"
+    }
+    </script>
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
@@ -22,5 +106,4 @@
       src="%VITE_ANALYTICS_ENDPOINT%/umami"
       data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
   </body>
-
 </html>
