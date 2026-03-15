@@ -416,7 +416,7 @@ export default function Home() {
                   className="border-white/40 text-white hover:bg-white/10 font-semibold text-base px-10"
                 >
                   <Phone className="mr-2 w-5 h-5" />
-                  (417) 555-0100
+                  (417) 319-1564
                 </Button>
               </a>
             </div>

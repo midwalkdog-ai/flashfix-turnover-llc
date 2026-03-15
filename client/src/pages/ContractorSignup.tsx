@@ -90,7 +90,7 @@ export default function ContractorSignup() {
       setSubmitted(true);
     },
     onError: () => {
-      toast.error("Failed to submit application. Please try calling us at (417) 555-0100.");
+      toast.error("Failed to submit application. Please try calling us at (417) 319-1564.");
     },
   });
 
@@ -145,7 +145,7 @@ export default function ContractorSignup() {
             <p className="text-muted-foreground mb-8 text-sm">
               Questions? Call us at{" "}
               <a href="tel:+14175550100" className="text-accent font-semibold">
-                (417) 555-0100
+                (417) 319-1564
               </a>
             </p>
             <Button

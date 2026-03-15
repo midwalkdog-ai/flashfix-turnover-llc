@@ -85,7 +85,7 @@ export default function ServicePageTemplate({
               <a href="tel:+14175550100">
                 <Button size="lg" variant="outline" className="border-white/40 text-white hover:bg-white/10 font-semibold px-8">
                   <Phone className="mr-2 w-4 h-4" />
-                  (417) 555-0100
+                  (417) 319-1564
                 </Button>
               </a>
             </div>
@@ -240,7 +240,7 @@ export default function ServicePageTemplate({
             <a href="tel:+14175550100">
               <Button size="lg" variant="outline" className="border-white/40 text-white hover:bg-white/10 font-semibold px-10">
                 <Phone className="mr-2 w-4 h-4" />
-                Call (417) 555-0100
+                Call (417) 319-1564
               </Button>
             </a>
           </div>

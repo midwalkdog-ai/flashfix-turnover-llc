@@ -60,14 +60,14 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
               className="flex items-center gap-1.5 hover:text-accent transition-colors"
             >
               <Phone className="w-3.5 h-3.5" />
-              (417) 555-0100
+              (417) 319-1564
             </a>
             <a
-              href="mailto:info@flashfixturnover.com"
+              href="mailto:flashfixturnover@gmail.com"
               className="flex items-center gap-1.5 hover:text-accent transition-colors"
             >
               <Mail className="w-3.5 h-3.5" />
-              info@flashfixturnover.com
+              flashfixturnover@gmail.com
             </a>
           </div>
         </div>
@@ -217,7 +217,7 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
               </div>
               <div className="pt-2 flex items-center gap-4 text-sm text-muted-foreground">
                 <a href="tel:+14175550100" className="flex items-center gap-1 hover:text-primary">
-                  <Phone className="w-3.5 h-3.5" /> (417) 555-0100
+                  <Phone className="w-3.5 h-3.5" /> (417) 319-1564
                 </a>
               </div>
             </div>
@@ -307,13 +307,13 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
                 <li className="flex items-start gap-2">
                   <Phone className="w-4 h-4 mt-0.5 text-accent flex-shrink-0" />
                   <a href="tel:+14175550100" className="hover:text-accent transition-colors">
-                    (417) 555-0100
+                    (417) 319-1564
                   </a>
                 </li>
                 <li className="flex items-start gap-2">
                   <Mail className="w-4 h-4 mt-0.5 text-accent flex-shrink-0" />
-                  <a href="mailto:info@flashfixturnover.com" className="hover:text-accent transition-colors">
-                    info@flashfixturnover.com
+                  <a href="mailto:flashfixturnover@gmail.com" className="hover:text-accent transition-colors">
+                    flashfixturnover@gmail.com
                   </a>
                 </li>
                 <li className="text-primary-foreground/60 text-xs mt-2">

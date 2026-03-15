@@ -79,7 +79,7 @@ export default function RequestService() {
       setPhotos([]);
     },
     onError: () => {
-      toast.error("Failed to submit request. Please try calling us at (417) 555-0100.");
+      toast.error("Failed to submit request. Please try calling us at (417) 319-1564.");
     },
   });
 
@@ -151,8 +151,8 @@ export default function RequestService() {
             </p>
             <p className="text-muted-foreground mb-8 text-sm">
               For urgent needs, call us directly at{" "}
-              <a href="tel:+14175550100" className="text-accent font-semibold">
-                (417) 555-0100
+              <a href="tel:+14173191564" className="text-accent font-semibold">
+                (417) 319-1564
               </a>
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -457,7 +457,7 @@ export default function RequestService() {
                   </p>
                   <a href="tel:+14175550100">
                     <Button className="w-full bg-accent hover:bg-accent/90 text-white font-semibold text-sm">
-                      Call (417) 555-0100
+                      Call (417) 319-1564
                     </Button>
                   </a>
                 </CardContent>
