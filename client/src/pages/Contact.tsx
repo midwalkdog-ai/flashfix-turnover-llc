@@ -86,10 +86,10 @@ export default function Contact() {
                     <div>
                       <div className="font-semibold text-foreground mb-1">Phone</div>
                       <a
-                        href="tel:+14175550100"
+                        href="tel:+14173191564"
                         className="text-primary hover:text-accent transition-colors font-medium"
                       >
-                        (417) 555-0100
+                        (417) 319-1564
                       </a>
                       <div className="text-xs text-muted-foreground mt-1">
                         Emergency line: 24/7
@@ -108,10 +108,10 @@ export default function Contact() {
                     <div>
                       <div className="font-semibold text-foreground mb-1">Email</div>
                       <a
-                        href="mailto:info@flashfixturnover.com"
+                        href="mailto:flashfixturnover@gmail.com"
                         className="text-primary hover:text-accent transition-colors font-medium text-sm"
                       >
-                        info@flashfixturnover.com
+                        flashfixturnover@gmail.com
                       </a>
                       <div className="text-xs text-muted-foreground mt-1">
                         Response within 2 hours
@@ -168,10 +168,10 @@ export default function Contact() {
                       <div className="text-xs text-muted-foreground mb-2">
                         For urgent issues like water leaks or broken windows, call our 24/7 emergency line.
                       </div>
-                      <a href="tel:+14175550100">
+                      <a href="tel:+14173191564">
                         <Button size="sm" className="bg-destructive hover:bg-destructive/90 text-white text-xs">
                           <Phone className="mr-1.5 w-3.5 h-3.5" />
-                          Emergency: (417) 555-0100
+                          Emergency: (417) 319-1564
                         </Button>
                       </a>
                     </div>
@@ -249,7 +249,7 @@ export default function Contact() {
                               type="tel"
                               value={form.phone}
                               onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                              placeholder="(417) 555-0000"
+                              placeholder="(417) 319-1564"
                               className="mt-1.5"
                             />
                           </div>
@@ -295,7 +295,7 @@ export default function Contact() {
                           )}
                         </Button>
                         <p className="text-xs text-muted-foreground text-center">
-                          We respond within 2 hours during business hours. For emergencies, call (417) 555-0100.
+                          We respond within 2 hours during business hours. For emergencies, call (417) 319-1564.
                         </p>
                       </form>
                     </>
