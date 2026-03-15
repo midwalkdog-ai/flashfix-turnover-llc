@@ -1386,18 +1386,21 @@ export default function ComponentsShowcase() {
                       for streaming responses.
                     </p>
                   </div>
-                  <AIChatBox
-                    api="/api/chat"
-                    placeholder="Try sending a message..."
-                    height="500px"
-                    emptyStateMessage="How can I help you today?"
-                    suggestedPrompts={[
-                      "What's the weather in Tokyo?",
-                      "Calculate 42 * 3.14",
-                      "What is React?",
-                      "Explain TypeScript",
-                    ]}
-                  />
+                  <div className="h-[500px] border rounded-lg overflow-hidden">
+                    <AIChatBox
+                      api="/api/chat"
+                      chatId="showcase-demo"
+                      initialMessages={[]}
+                      placeholder="Try sending a message..."
+                      emptyStateMessage="How can I help you today?"
+                      suggestedPrompts={[
+                        "What's the weather in Tokyo?",
+                        "Calculate 42 * 3.14",
+                        "What is React?",
+                        "Explain TypeScript",
+                      ]}
+                    />
+                  </div>
                 </div>
               </CardContent>
             </Card>
