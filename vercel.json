@@ -2,13 +2,13 @@
   "version": 2,
   "name": "flashfix-turnover",
   "buildCommand": "pnpm build",
-  "outputDirectory": "dist",
+  "outputDirectory": "dist/public",
   "installCommand": "pnpm install",
   "framework": null,
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "dist/index.js"
+      "dest": "/dist/index.js"
     },
     {
       "src": "/sitemap.xml",
@@ -23,7 +23,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "dist/index.js"
+      "dest": "/dist/index.js"
     }
   ],
   "redirects": [
