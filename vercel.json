@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "flashfix-turnover",
-  "buildCommand": "pnpm build && esbuild api/index.ts --platform=node --packages=external --bundle --format=esm --outdir=.vercel/output/functions/api",
+  "buildCommand": "pnpm build",
   "outputDirectory": "dist/public",
   "installCommand": "pnpm install",
   "framework": null,

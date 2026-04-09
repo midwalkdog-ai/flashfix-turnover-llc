@@ -1,46 +1,26 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import express from "express";
-import { createExpressMiddleware } from "@trpc/server/adapters/express";
-import { registerOAuthRoutes } from "../server/_core/oauth";
-import { registerChatRoutes } from "../server/_core/chat";
-import { appRouter } from "../server/routers";
-import { createContext } from "../server/_core/context";
 import fs from "fs";
 import path from "path";
 
-const app = express();
-
-// Configure body parser
-app.use(express.json({ limit: "50mb" }));
-app.use(express.urlencoded({ limit: "50mb", extended: true }));
-
-// Register routes
-registerOAuthRoutes(app);
-registerChatRoutes(app);
-
-// tRPC API
-app.use(
-  "/api/trpc",
-  createExpressMiddleware({
-    router: appRouter,
-    createContext,
-  })
-);
-
-// Serve static files from dist/public
-const distPath = path.join(__dirname, "../dist/public");
-if (fs.existsSync(distPath)) {
-  app.use(express.static(distPath));
-}
-
-// SPA fallback: serve index.html for all non-API routes
-app.get("*", (_req, res) => {
-  const indexPath = path.join(distPath, "index.html");
-  if (fs.existsSync(indexPath)) {
-    res.sendFile(indexPath);
-  } else {
-    res.status(404).send("Not found");
+export default function handler(req: VercelRequest, res: VercelResponse) {
+  // For API routes, let Vercel handle them normally
+  if (req.url?.startsWith("/api/")) {
+    return res.status(404).json({ error: "API route not found" });
   }
-});
 
-export default app;
+  // For all other routes, serve the index.html (SPA fallback)
+  try {
+    const indexPath = path.join(process.cwd(), "dist", "public", "index.html");
+    
+    if (fs.existsSync(indexPath)) {
+      const html = fs.readFileSync(indexPath, "utf-8");
+      res.setHeader("Content-Type", "text/html; charset=utf-8");
+      res.status(200).send(html);
+    } else {
+      res.status(404).json({ error: "Not found" });
+    }
+  } catch (error) {
+    console.error("Error serving index.html:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+}
